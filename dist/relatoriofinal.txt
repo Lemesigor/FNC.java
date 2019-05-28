@@ -1,0 +1,359 @@
+##################    RELATORIO FINAL ####################
+
+
+
+
+
+                 -ORIGINAL-
+                ||GRAMATICA||
+- Terminais: { runs| barks| eats| chases| park| dog| cat| meat| the| a| in| with| at|  }.
+- Variaveis: { N| VB| NP| DT| VP| S| PP| P|  }.
+- Inicial: { S }.
+- Regras: { 
+DT -> a ;
+DT -> the ;
+N -> dog ;
+N -> cat ;
+N -> meat ;
+N -> park ;
+NP -> dog ;
+NP -> cat ;
+NP -> meat ;
+NP -> park ;
+NP -> DT N ;
+NP -> NP PP ;
+P -> in ;
+P -> with ;
+P -> at ;
+PP -> P NP ;
+S -> NP VP ;
+S -> S S ;
+VB -> runs ;
+VB -> barks ;
+VB -> eats ;
+VB -> chases ;
+VP -> VB NP ;
+VP -> VP PP ;
+VP -> runs ;
+VP -> barks ;
+VP -> eats ;
+VP -> chases ;
+}
+--------------------------------------------------------------------------
+
+              -SEM PROD. VAZIAS-
+                ||GRAMATICA||
+- Terminais: { runs| barks| eats| chases| park| dog| cat| meat| the| a| in| with| at|  }.
+- Variaveis: { N| VB| NP| DT| VP| S| PP| P|  }.
+- Inicial: { S }.
+- Regras: { 
+DT -> a ;
+DT -> the ;
+N -> dog ;
+N -> cat ;
+N -> meat ;
+N -> park ;
+NP -> dog ;
+NP -> cat ;
+NP -> meat ;
+NP -> park ;
+NP -> DT N ;
+NP -> NP PP ;
+P -> in ;
+P -> with ;
+P -> at ;
+PP -> P NP ;
+S -> NP VP ;
+S -> S S ;
+VB -> runs ;
+VB -> barks ;
+VB -> eats ;
+VB -> chases ;
+VP -> VB NP ;
+VP -> VP PP ;
+VP -> runs ;
+VP -> barks ;
+VP -> eats ;
+VP -> chases ;
+}
+--------------------------------------------------------------------------
+
+              -SEM PROD. UNITARIAS-
+                ||GRAMATICA||
+- Terminais: { runs| barks| eats| chases| park| dog| cat| meat| the| a| in| with| at|  }.
+- Variaveis: { N| VB| NP| DT| VP| S| PP| P|  }.
+- Inicial: { S }.
+- Regras: { 
+DT -> a ;
+DT -> the ;
+N -> dog ;
+N -> cat ;
+N -> meat ;
+N -> park ;
+NP -> dog ;
+NP -> cat ;
+NP -> meat ;
+NP -> park ;
+NP -> DT N ;
+NP -> NP PP ;
+P -> in ;
+P -> with ;
+P -> at ;
+PP -> P NP ;
+S -> NP VP ;
+S -> S S ;
+VB -> runs ;
+VB -> barks ;
+VB -> eats ;
+VB -> chases ;
+VP -> VB NP ;
+VP -> VP PP ;
+VP -> runs ;
+VP -> barks ;
+VP -> eats ;
+VP -> chases ;
+}
+--------------------------------------------------------------------------
+
+              -SEM SIMBOLOS INUTEIS-
+                ||GRAMATICA||
+- Terminais: { dog| cat| meat| park| runs| barks| eats| chases| a| the| in| with| at|  }.
+- Variaveis: { S| NP| VP| DT| N| PP| VB| P|  }.
+- Inicial: { S }.
+- Regras: { 
+DT -> a ;
+DT -> the ;
+N -> dog ;
+N -> cat ;
+N -> meat ;
+N -> park ;
+NP -> dog ;
+NP -> cat ;
+NP -> meat ;
+NP -> park ;
+NP -> DT N ;
+NP -> NP PP ;
+P -> in ;
+P -> with ;
+P -> at ;
+PP -> P NP ;
+S -> NP VP ;
+S -> S S ;
+VB -> runs ;
+VB -> barks ;
+VB -> eats ;
+VB -> chases ;
+VP -> VB NP ;
+VP -> VP PP ;
+VP -> runs ;
+VP -> barks ;
+VP -> eats ;
+VP -> chases ;
+}
+--------------------------------------------------------------------------
+
+              -Gramatica com as três simplificações aplicadas na ordem-
+                ||GRAMATICA||
+- Terminais: { dog| cat| meat| park| runs| barks| eats| chases| a| the| in| with| at|  }.
+- Variaveis: { S| NP| VP| DT| N| PP| VB| P|  }.
+- Inicial: { S }.
+- Regras: { 
+DT -> a ;
+DT -> the ;
+N -> dog ;
+N -> cat ;
+N -> meat ;
+N -> park ;
+NP -> dog ;
+NP -> cat ;
+NP -> meat ;
+NP -> park ;
+NP -> DT N ;
+NP -> NP PP ;
+P -> in ;
+P -> with ;
+P -> at ;
+PP -> P NP ;
+S -> NP VP ;
+S -> S S ;
+VB -> runs ;
+VB -> barks ;
+VB -> eats ;
+VB -> chases ;
+VP -> VB NP ;
+VP -> VP PP ;
+VP -> runs ;
+VP -> barks ;
+VP -> eats ;
+VP -> chases ;
+}
+--------------------------------------------------------------------------
+
+                    -FNC-
+
+                 -Etapa 2-
+                ||GRAMATICA||
+- Terminais: { dog| cat| meat| park| runs| barks| eats| chases| a| the| in| with| at|  }.
+- Variaveis: { S| NP| VP| DT| N| PP| VB| P|  }.
+- Inicial: { S }.
+- Regras: { 
+DT -> a ;
+DT -> the ;
+N -> dog ;
+N -> cat ;
+N -> meat ;
+N -> park ;
+NP -> dog ;
+NP -> cat ;
+NP -> meat ;
+NP -> park ;
+NP -> DT N ;
+NP -> NP PP ;
+P -> in ;
+P -> with ;
+P -> at ;
+PP -> P NP ;
+S -> NP VP ;
+S -> S S ;
+VB -> runs ;
+VB -> barks ;
+VB -> eats ;
+VB -> chases ;
+VP -> VB NP ;
+VP -> VP PP ;
+VP -> runs ;
+VP -> barks ;
+VP -> eats ;
+VP -> chases ;
+}
+--------------------------------------------------------------------------
+
+                 -Etapa 3-
+                ||GRAMATICA||
+- Terminais: { dog| cat| meat| park| runs| barks| eats| chases| a| the| in| with| at|  }.
+- Variaveis: { S| NP| VP| DT| N| PP| VB| P|  }.
+- Inicial: { S }.
+- Regras: { 
+DT -> a ;
+DT -> the ;
+N -> dog ;
+N -> cat ;
+N -> meat ;
+N -> park ;
+NP -> dog ;
+NP -> cat ;
+NP -> meat ;
+NP -> park ;
+NP -> DT N ;
+NP -> NP PP ;
+P -> in ;
+P -> with ;
+P -> at ;
+PP -> P NP ;
+S -> NP VP ;
+S -> S S ;
+VB -> runs ;
+VB -> barks ;
+VB -> eats ;
+VB -> chases ;
+VP -> VB NP ;
+VP -> VP PP ;
+VP -> runs ;
+VP -> barks ;
+VP -> eats ;
+VP -> chases ;
+}
+--------------------------------------------------------------------------
+
+                    -FNC Final-
+                ||GRAMATICA||
+- Terminais: { dog| cat| meat| park| runs| barks| eats| chases| a| the| in| with| at|  }.
+- Variaveis: { S| NP| VP| DT| N| PP| VB| P|  }.
+- Inicial: { S }.
+- Regras: { 
+DT -> a ;
+DT -> the ;
+N -> dog ;
+N -> cat ;
+N -> meat ;
+N -> park ;
+NP -> dog ;
+NP -> cat ;
+NP -> meat ;
+NP -> park ;
+NP -> DT N ;
+NP -> NP PP ;
+P -> in ;
+P -> with ;
+P -> at ;
+PP -> P NP ;
+S -> NP VP ;
+S -> S S ;
+VB -> runs ;
+VB -> barks ;
+VB -> eats ;
+VB -> chases ;
+VP -> VB NP ;
+VP -> VP PP ;
+VP -> runs ;
+VP -> barks ;
+VP -> eats ;
+VP -> chases ;
+}
+--------------------------------------------------------------------------
+                   *****TABELA CYK*******
+
+|| S     ||
+
+|| NP    || S     ||
+
+|| DT    || N NP  || VB VP ||
+
+
+
+|| a     || dog   || runs  ||
+
+
+
+            A sentença foi ACEITA
+
+          - Arvore de Derivaçao -
+
+
+          -- VP
+
+-- S
+
+                    -- N
+
+          -- NP
+
+                    -- DT
+                   *****TABELA CYK*******
+
+|| S     ||
+
+|| NP    || S     ||
+
+|| DT    || N NP  || VB VP ||
+
+
+
+|| a     || cat   || runs  ||
+
+
+
+            A sentença foi ACEITA
+
+          - Arvore de Derivaçao -
+
+
+          -- VP
+
+-- S
+
+                    -- N
+
+          -- NP
+
+                    -- DT

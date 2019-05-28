@@ -1,0 +1,15 @@
+#Terminais						# A secao de simbolos terminais eh a primeira do arquivo.
+[ + ]							# Tudo o que estiver apos o sustenido (#) sera considerado comentario
+[ * ]							# Os simbolos terminais sao qualquer sequencia de caracteres (nao reservados) entre colchetes.
+[ 4 ]							# A secao de simbolos terminais inicia com a palavra-chave "Terminais"
+[ D ]
+[ x ] 
+#Variaveis						# A secao de variaveis inicia pela palavra reservada "Variaveis", e eh a segunda do arquivo
+[ E ]							# Eh muito importante respeitar a ordem das secoes
+#Inicial						# O simbolo inicial possui uma secao propria, iniciada pela palavra "Inicial"
+[ E ]							# Essa secao possui apenas uma linha com o simbolo inicial entre colchetes.
+#Regras							# A ultima secao vem encabecada pela palavra-chave "Regras"
+[ E ] > [ E ] [ + ] [ E ] 
+[ E ] > [ E ] [ * ] [ E ] 
+[ E ] > [ 4 ] [ E ] [ D ] 
+[ E ] > [ x ] 
